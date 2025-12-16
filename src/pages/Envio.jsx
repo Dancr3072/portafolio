@@ -76,7 +76,7 @@ export default function Envio() {{
    * - Condicionalmente renderizamos mensajes de error y la tarjeta del personaje.
    */
   return (
-    <div style={{ maxWidth: 640, margin: "0 auto", padding: 16 }}>
+    <div style={{ maxWidth: 640, margin: "0 auto", padding: 16 }} className="buscar">
       {/* 6.1) Título y breve descripción */}
       <h1>Buscar personaje por ID</h1>
       <p>Ingresa un número de ID y presiona "Buscar" para obtener un personaje.</p>
@@ -85,6 +85,9 @@ export default function Envio() {{
           - value está vinculado al estado "id"
           - onChange actualiza "id" con lo que escribe el usuario */}
       <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+
+        <div>
+
         <input
           type="number"
           placeholder="Ingresa un ID (ej: 1)"
@@ -97,6 +100,8 @@ export default function Envio() {{
         <button onClick={fetchCharacter} style={{ padding: "8px 12px" }}>
           Buscar
         </button>
+      </div>
+
       </div>
 
       {/* 6.4) Mensaje de error (se muestra solo si "error" tiene contenido) */}

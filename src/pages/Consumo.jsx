@@ -44,19 +44,53 @@ export default function Consumo() {
       {/* Título principal */}
       <h1>Personajes de Rick and Morty</h1>
 
+      <hr className="divider1" />
+
       {/* Lista de personajes */}
       <ul>
         {characters.map((character) => (
-          <li key={character.id}>
+          <>
+
+          <li  className="listaper" key={character.id}>
+
+            <div>
+
             {/* Nombre */}
-            <h2>{character.name}</h2>
+            <h2  className="nombreper">{character.name}</h2>
             {/* Imagen */}
-            <img src={character.image} alt={character.name} />
-            {/* Estado */}
-            <p>Estado: {character.status}</p>
+
+            </div>
+
+            <div className="Estado">
+
+            <img src={character.image} alt={character.name} className="img-per" />
+            
+            <ul className="listaesta">
+
+            <li>
+
+            {/* Estado */}            
+            <p><span class="resaltado">Estado:</span> {character.status}</p>
+
+            </li>
+
+            <li>
+
             {/* Especie */}
-            <p>Especie: {character.species}</p>
+            <p><span class="resaltado">Especie:</span> {character.species}</p>
+
+            </li>
+
+            </ul>
+
+            </div>
+
           </li>
+          
+          <hr className="divider1" />
+          
+          </>
+
         ))}
       </ul>
     </div>

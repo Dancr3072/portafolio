@@ -3,9 +3,9 @@ export default function Contacto() {
         <div className="contenido">
             <h2>Contacto</h2>
             <hr/>
-            <ul>
-                <li>Email: tu@email.com</li>
-                <li>Teléfono: +57 xxx xxxx xxx</li>
+            <ul className="listac">
+                <li>Email: hcelisr0@soy.sena.edu.co</li>
+                <li>Teléfono: +57 000 000 00 00</li>
                 <li>LinkedIn: linkedin.com/in/tuUsuario</li>
             </ul>
         </div>

@@ -1,16 +1,30 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-export default function Navigation() {
+function menu() {
+
+// eslint-disable-next-line react-hooks/rules-of-hooks
+const navigate = useNavigate();
+
   return (
     <nav>
-      <ul>
-        <li><Link to="/">Presentación</Link></li>
-        <li><Link to="/experiencia">Experiencia</Link></li>
-        <li><Link to="/contacto">Contacto</Link></li>
-        <li><Link to="/envio">Envio</Link></li>
-        <li><Link to="/consumo">Personajes</Link></li>
-        <li><Link to="/episodio">Episodios</Link></li>
-      </ul>
+    
+       
+        <button onClick={() => navigate("/presentacion")}>Presentación</button>
+
+        <button onClick={() => navigate("/experiencia")}>Experiencia</button>
+        
+        <button onClick={() => navigate("/contacto")}>Contacto</button>
+        
+        <button onClick={() => navigate("/envio")}>Buscar </button>
+        
+        <button onClick={() => navigate("/consumo")}>Personajes</button>
+        
+        <button onClick={() => navigate("/episodio")}>Episodio</button>
+
+      <hr className="divider" />
+
     </nav>
   );
 }
+
+export default menu;

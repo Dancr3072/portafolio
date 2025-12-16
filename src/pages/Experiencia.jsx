@@ -1,13 +1,14 @@
 export default function Experiencia() {
     return (
-        <div className="contenido">
-            <h2>Experiencia</h2>
-            <hr/>
-            <div className="borde">
-                <h4>Puesto, Empresa</h4>
-                <p>Fecha inicio - Fecha fin</p>
-                <p>Descripción breve de responsabilidades o logros.</p>
+       <>
+       <div className="seccion">
+            <h3 className="experiencia">Experiencia laboral</h3>
+            <div className="bloque">
+                <h4>Tecnico de instalacion, Ecoespacios </h4>
+                <p>04-01-2023 - Actual</p>
+                <p>Supervision de instalacion de moviliario e isntalaciones electricas en campo.</p>
             </div>
         </div>
+        </>
     );
 }
